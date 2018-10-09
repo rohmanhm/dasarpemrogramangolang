@@ -1,0 +1,25 @@
+.no-link {
+    pointer-events: none;
+}
+.gitbook-link {
+    visibility: hidden;
+    pointer-events: none;
+    height: 20px;
+}
+#disqus_thread {
+    margin-top: 40px;
+}
+#disqus_thread + #disqus_thread {
+    display: none;
+}
+#disqus_thread:before {
+    background-color: #e7e9ee;
+    content: " ";
+    display: block;
+    height: 1px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+#disqus_thread > iframe:nth-child(1) {
+    padding-top: 30px;
+}
