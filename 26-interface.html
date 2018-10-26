@@ -7,7 +7,7 @@
     luas() <span class="hljs-keyword">float64</span>
     keliling() <span class="hljs-keyword">float64</span>
 }
-</code></pre><p>Pada kode di atas, interface <code>hitung</code> memiliki 2 definisi method, <code>luas()</code> dan <code>keliling()</code>. Interface ini nantinya digunakan sebagai tipe data pada variabel, dimana variabel tersebut akan menampung menampung objek bangun datar hasil dari struct yang akan kita buat.</p><p>Dengan memanfaatkan interface <code>hitung</code>, perhitungan luas dan keliling bangun datar bisa dilakukan, tanpa perlu tahu jenis bangun datarnya sendiri itu apa.</p><p>Siapkan struct bangun datar <code>lingkaran</code>, struct ini memiliki method yang beberapa diantaranya terdefinisi di interface <code>hitung</code>.</p><pre><code class="lang-go"><span class="hljs-keyword">type</span> lingkaran <span class="hljs-keyword">struct</span> {
+</code></pre><p>Pada kode di atas, interface <code>hitung</code> memiliki 2 definisi method, <code>luas()</code> dan <code>keliling()</code>. Interface ini nantinya digunakan sebagai tipe data pada variabel, dimana variabel tersebut akan menampung objek bangun datar hasil dari struct yang akan kita buat.</p><p>Dengan memanfaatkan interface <code>hitung</code>, perhitungan luas dan keliling bangun datar bisa dilakukan, tanpa perlu tahu jenis bangun datarnya sendiri itu apa.</p><p>Siapkan struct bangun datar <code>lingkaran</code>, struct ini memiliki method yang beberapa diantaranya terdefinisi di interface <code>hitung</code>.</p><pre><code class="lang-go"><span class="hljs-keyword">type</span> lingkaran <span class="hljs-keyword">struct</span> {
     diameter <span class="hljs-keyword">float64</span>
 }
 
